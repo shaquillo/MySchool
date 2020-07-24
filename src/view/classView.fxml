@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="523.0" prefWidth="727.0" styleClass="pageOutput" stylesheets="@../style/style1.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClassController">
+   <children>
+      <Label alignment="CENTER_RIGHT" graphicTextGap="8.0" layoutX="34.0" layoutY="20.0" prefHeight="46.0" prefWidth="135.0" text="CLASSES" textAlignment="RIGHT" textFill="#47833a">
+         <font>
+            <Font name="Algerian" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="38.0">
+               <image>
+                  <Image url="@../images/class.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <JFXButton fx:id="home" alignment="CENTER_RIGHT" buttonType="RAISED" graphicTextGap="8.0" layoutX="612.0" layoutY="25.0" onAction="#goToHome" prefHeight="36.0" prefWidth="89.0" text="HOME" textFill="#47833a">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../images/home.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <Label layoutX="48.0" layoutY="96.0" prefHeight="30.0" prefWidth="48.0" text="Class :" textFill="#47833a">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="classChoiceCB" focusColor="#47833a" layoutX="102.0" layoutY="99.0" prefHeight="25.0" prefWidth="168.0" promptText="Enter class" unFocusColor="#47833a" />
+      <Label layoutX="54.0" layoutY="138.0" prefHeight="30.0" prefWidth="66.0" text="Students " textFill="#47833a">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="138.0" prefHeight="30.0" prefWidth="66.0" text="Teachers" textFill="#47833a">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="96.0" prefHeight="30.0" prefWidth="89.0" text="Sector Head :" textFill="#47833a">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="sectorHeadName" layoutX="480.0" layoutY="96.0" prefHeight="30.0" prefWidth="233.0" text="select a class" />
+      <ListView layoutX="37.0" layoutY="169.0" prefHeight="301.0" prefWidth="307.0" />
+      <ListView layoutX="388.0" layoutY="169.0" prefHeight="301.0" prefWidth="307.0" />
+      <JFXButton fx:id="numberOfStudentBtn" layoutX="48.0" layoutY="482.0" prefHeight="27.0" prefWidth="127.0" text="Number of students" />
+      <JFXButton fx:id="numberOfTeachersBtn" layoutX="388.0" layoutY="482.0" prefHeight="27.0" prefWidth="127.0" text="Number of teachers" />
+      <JFXButton fx:id="addClass" layoutX="442.0" layoutY="28.0" onAction="#addClassClick" prefHeight="30.0" prefWidth="72.0" text="Add class" />
+   </children>
+</AnchorPane>

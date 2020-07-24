@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="523.0" prefWidth="727.0" styleClass="pageOutput" stylesheets="@../style/style1.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminController">
+   <children>
+      <Label alignment="CENTER_RIGHT" graphicTextGap="8.0" layoutX="17.0" layoutY="16.0" prefHeight="38.0" prefWidth="199.0" text="ADMINISTRATORS" textFill="#47833a">
+         <font>
+            <Font name="Algerian" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="34.0">
+               <image>
+                  <Image url="@../images/administrator.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label alignment="CENTER" layoutX="335.0" layoutY="79.0" prefHeight="28.0" prefWidth="58.0" text="Principal " textFill="#47833a">
+         <font>
+            <Font name="Cambria Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="90.0" layoutY="265.0" prefHeight="28.0" prefWidth="112.0" text="Discipline masters" textFill="#47833a">
+         <font>
+            <Font name="Cambria Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="principalName" alignment="CENTER" layoutX="206.0" layoutY="107.0" prefHeight="38.0" prefWidth="316.0" style="-fx-background-color: #FFFFFF;" text="No principal">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="secretaryName" alignment="CENTER" layoutX="206.0" layoutY="193.0" prefHeight="38.0" prefWidth="316.0" style="-fx-background-color: #FFFFFF;" text="No secretary">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="330.0" layoutY="165.0" prefHeight="28.0" prefWidth="67.0" text="Secretary " textFill="#47833a">
+         <font>
+            <Font name="Cambria Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="470.0" layoutY="265.0" prefHeight="28.0" prefWidth="105.0" text="Sectors head" textFill="#47833a">
+         <font>
+            <Font name="Cambria Italic" size="14.0" />
+         </font>
+      </Label>
+      <ListView layoutX="17.0" layoutY="301.0" prefHeight="161.0" prefWidth="258.0" />
+      <TableView layoutX="371.0" layoutY="301.0" prefHeight="161.0" prefWidth="297.0">
+        <columns>
+          <TableColumn prefWidth="210.0" text="Name" />
+          <TableColumn prefWidth="86.0" text="Class" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="addAdminBtn" layoutX="610.0" layoutY="475.0" prefHeight="27.0" prefWidth="58.0" text="Add" />
+      <JFXButton fx:id="removeAdminBtn" layoutX="489.0" layoutY="475.0" prefHeight="27.0" prefWidth="67.0" text="Remove" />
+      <JFXButton fx:id="home" alignment="CENTER_RIGHT" buttonType="RAISED" graphicTextGap="8.0" layoutX="592.0" layoutY="17.0" onAction="#goToHome" prefHeight="36.0" prefWidth="89.0" text="HOME" textFill="#47833a">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../images/home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

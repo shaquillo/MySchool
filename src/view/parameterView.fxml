@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="523.0" prefWidth="727.0" styleClass="pageOutput" stylesheets="@../style/style1.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ParameterController">
+   <children>
+      <Label alignment="CENTER_RIGHT" graphicTextGap="8.0" layoutX="41.0" layoutY="26.0" prefHeight="50.0" prefWidth="156.0" text="PARAMETER" textFill="#47833a">
+         <font>
+            <Font name="Algerian" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="38.0">
+               <image>
+                  <Image url="@../images/parameter.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label alignment="CENTER" layoutX="247.0" layoutY="104.0" prefHeight="50.0" prefWidth="232.0" text="Change credentials" textFill="#47833a" underline="true">
+         <font>
+            <Font name="Cambria Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="60.0" layoutY="183.0" prefHeight="35.0" prefWidth="185.0" text="Old credential" textFill="#47833a">
+         <font>
+            <Font name="Cambria Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="442.0" layoutY="183.0" prefHeight="35.0" prefWidth="185.0" text="New credential" textFill="#47833a">
+         <font>
+            <Font name="Cambria Italic" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="oldUsername" focusColor="#47833a" labelFloat="true" layoutX="48.0" layoutY="280.0" prefHeight="35.0" prefWidth="208.0" promptText="username" unFocusColor="#47833a" />
+      <JFXTextField fx:id="newUsername" focusColor="#47833a" labelFloat="true" layoutX="430.0" layoutY="280.0" prefHeight="35.0" prefWidth="208.0" promptText="username" unFocusColor="#47833a" />
+      <JFXPasswordField fx:id="oldPassword" focusColor="#47833a" labelFloat="true" layoutX="48.0" layoutY="361.0" prefHeight="35.0" prefWidth="208.0" promptText="password" unFocusColor="#47833a" />
+      <JFXPasswordField fx:id="newPassword" focusColor="#47833a" labelFloat="true" layoutX="430.0" layoutY="361.0" prefHeight="35.0" prefWidth="208.0" promptText="password" unFocusColor="#47833a" />
+      <JFXButton fx:id="changeBtn" layoutX="283.0" layoutY="442.0" prefHeight="35.0" prefWidth="169.0" text="Change credentials" />
+      <JFXButton fx:id="home" alignment="CENTER_RIGHT" buttonType="RAISED" graphicTextGap="8.0" layoutX="608.0" layoutY="26.0" onAction="#goToHome" prefHeight="36.0" prefWidth="88.0" text="HOME" textFill="#47833a">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../images/home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Line endX="11.0" endY="135.0" fill="#47833a" layoutX="352.0" layoutY="280.0" startX="11.0" startY="-65.0" stroke="#47833a" />
+   </children>
+</AnchorPane>

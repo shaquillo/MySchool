@@ -1,0 +1,19 @@
+.button:hover{
+ -fx-background-color : #87DD71;
+ -fx-text-fill : #FFFFFF;
+ -fx-text-alignment : center;
+ -fx-padding : 3px ;
+}
+
+.button{
+ -fx-background-color : #FFFFFF;
+ -fx-border-color : #47833A;
+ -fx-text-fill : #47833A;
+}
+
+.pageOutput{
+ -fx-background-image : url(../images/img2.jpg);
+ -fx-background-size : cover;
+ -fx-background-radius : 10px;
+ -fx-border-radius : 10px;
+}

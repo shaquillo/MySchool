@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="437.0" prefWidth="368.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddStudentView">
+   <children>
+      <Pane layoutY="76.0" prefHeight="361.0" prefWidth="368.0" style="-fx-background-color: #47833A;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="76.0">
+         <children>
+            <Label layoutX="14.0" layoutY="25.0" prefHeight="27.0" prefWidth="70.0" text="Name :" textFill="#fff1f1">
+               <font>
+                  <Font name="Cambria Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="82.0" prefHeight="27.0" prefWidth="91.0" text="Date of birth :" textFill="#fff1f1">
+               <font>
+                  <Font name="Cambria Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="133.0" prefHeight="27.0" prefWidth="46.0" text="Class :" textFill="#fff1f1">
+               <font>
+                  <Font name="Cambria Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="183.0" prefHeight="27.0" prefWidth="54.0" text="Gender :" textFill="#fff1f1">
+               <font>
+                  <Font name="Cambria Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameLabel" layoutX="69.0" layoutY="26.0" prefHeight="25.0" prefWidth="288.0" style="-fx-background-radius: 0px; -fx-border-color: #47833A;" />
+            <DatePicker fx:id="dateInput" layoutX="107.0" layoutY="83.0" prefHeight="25.0" prefWidth="249.0" style="-fx-background-radius: 0px; -fx-border-color: #47833A; -fx-background-color: #47833A;" />
+            <JFXComboBox fx:id="classCBox" focusColor="#fff1f1" layoutX="69.0" layoutY="135.0" prefHeight="25.0" prefWidth="162.0" unFocusColor="#fff1f1" />
+            <JFXRadioButton layoutX="23.0" layoutY="217.0" prefHeight="25.0" prefWidth="100.0" style="-jfx-selected-color: #FFF1F1; -jfx-unselected-color: #FFF1F1;" text="male" textFill="#fff1f1">
+               <font>
+                  <Font name="Cambria Bold Italic" size="13.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="gender" />
+               </toggleGroup></JFXRadioButton>
+            <JFXRadioButton layoutX="23.0" layoutY="253.0" prefHeight="25.0" prefWidth="100.0" style="-jfx-selected-color: #FFF1F1; -jfx-unselected-color: #FFF1F1;" text="female" textFill="#fff1f1" toggleGroup="$gender">
+               <font>
+                  <Font name="Cambria Bold Italic" size="13.0" />
+               </font></JFXRadioButton>
+            <Button fx:id="addBtn" layoutX="43.0" layoutY="310.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="77.0" style="-fx-background-color: #FFF1F1; -fx-background-radius: 10px;" text="Add" textFill="#47833a">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+               <effect>
+                  <Lighting bumpInput="$null" light="$null" />
+               </effect></Button>
+            <Button fx:id="resetBtn" layoutX="270.0" layoutY="312.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: #FFF1F1; -fx-background-radius: 10px;" text="Reset" textFill="#47833a">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+               <effect>
+                  <Lighting bumpInput="$null" light="$null" />
+               </effect></Button>
+         </children>
+      </Pane>
+      <Pane layoutX="5.0" layoutY="152.0" prefHeight="41.0" prefWidth="368.0" style="-fx-background-color: #47833A;" AnchorPane.bottomAnchor="396.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="CloseImage" fitHeight="27.0" fitWidth="30.0" layoutX="324.0" layoutY="7.0" onMouseClicked="#closeImageClick">
+               <image>
+                  <Image url="@../images/close.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="121.0" layoutY="41.0" prefHeight="35.0" prefWidth="127.0" text="New student" textFill="#47833a">
+         <font>
+            <Font name="Cambria Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
